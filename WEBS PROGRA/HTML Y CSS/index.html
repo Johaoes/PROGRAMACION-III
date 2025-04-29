@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Escolar</title>
+  <style>
+    body {
+      background-color: #d7fffb;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #00bcd4;
+      color: white;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .temas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+      gap: 50px; /* Espacio entre los cuadros */
+    }
+
+    .tema {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    }
+
+    .tema:hover {
+      transform: scale(1.05); /* Escala ligeramente el cuadro */
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    }
+
+    .tema img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .formulario {
+      background-color: #f0fff0;
+      border: 2px dashed #66cdaa;
+      padding: 20px;
+      margin: 40px 0;
+      border-radius: 10px;
+    }
+
+    .formulario input[type="text"],
+    .formulario input[type="date"],
+    .formulario textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .formulario input[type="submit"] {
+      background-color: #66cdaa;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .formulario input[type="submit"]:hover {
+      background-color: #57b39e;
+    }
+
+    .novedades {
+      background-color: #e6fffd;
+      border: 2px solid #03644f;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 15px;
+      background-color: #00bcd4;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Blog Escolar</h1>
+    <p>Bienvenidos a mi espacio para compartir conocimientos y reflexiones escolares.</p>
+  </header>
+
+  <main>
+    <div class="temas">
+      <!-- Tema 4 -->
+      <section class="tema">
+        <h2>Tema 4: La importancia de estudiar</h2>
+        <p><strong>Fecha:</strong> 29 de abril de 2025</p>
+        <img src="estudiando.jpg" alt="Estudiante estudiando">
+        <p>Estudiar es fundamental para el desarrollo personal y profesional. Nos ayuda a adquirir conocimientos y habilidades que utilizaremos toda la vida.</p>
+      </section>
+
+      <!-- Tema 3 -->
+      <section class="tema">
+        <h2>Tema 3: Mi asignatura favorita</h2>
+        <p><strong>Fecha:</strong> 28 de abril de 2025</p>
+        <img src="diseno.jpg" alt="Diseño UX UI">
+        <p>Mi asignatura favorita es Diseño UX/UI porque nos expande mentalmente a pensar gráficamente como un diseñador.</p>
+      </section>
+
+      <!-- Tema 2 -->
+      <section class="tema">
+        <h2>Tema 2: El futuro de la inteligencia artificial</h2>
+        <p><strong>Fecha:</strong> 26 de abril de 2025</p>
+        <img src="IA.png" alt="Inteligencia Artificial">
+        <p>La inteligencia artificial está cambiando rápidamente la forma en que vivimos y trabajamos, y su impacto será aún mayor en los próximos años.</p>
+      </section>
+
+      <!-- Tema 1 -->
+      <section class="tema">
+        <h2>Tema 1: La importancia de la salud mental</h2>
+        <p><strong>Fecha:</strong> 24 de abril de 2025</p>
+        <img src="saludmental.png" alt="Salud Mental">
+        <p>La salud mental es fundamental para nuestro bienestar general. Es importante cuidar nuestra mente tanto como nuestro cuerpo.</p>
+      </section>
+    </div>
+
+    <section class="formulario">
+      <h2>Escribir un nuevo tema</h2>
+      <form>
+        <label for="titulo">Título del tema:</label>
+        <input type="text" id="titulo" name="titulo">
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha">
+
+        <label for="contenido">Contenido:</label>
+        <textarea id="contenido" name="contenido" rows="5"></textarea>
+
+        <label for="imagen">Subir una imagen:</label>
+        <input type="file" id="imagen" name="imagen">
+
+        <input type="submit" value="Publicar Tema">
+      </form>
+    </section>
+
+    <section class="novedades">
+      <h2>📰 Novedades</h2>
+      <ul>
+        <li>Se realizará una feria de arduinos el próximo 10 de mayo.</li>
+        <li>Nuevo laboratorio de informática disponible desde la próxima semana.</li>
+        <li>Inscripciones abiertas para el concurso de programación de videouegos.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Johao - Blog Escolar</p>
+  </footer>
+
+</body>
+</html>

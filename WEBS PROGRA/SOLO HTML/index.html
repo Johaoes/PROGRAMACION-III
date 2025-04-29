@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Escolar</title>
+</head>
+<body style="background-color: #d7fffb; font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
+  <header style="text-align: center; padding: 20px;">
+    <h1>BLOG ESCOLAR</h1>
+    <p>Bienvenidos a mi espacio para compartir conocimientos y reflexiones escolares.</p>
+  </header>
+
+  <main style="max-width: 900px; margin: auto; padding: 10px;">
+
+    <!-- Contenedor de temas en dos columnas -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+
+      <!-- Tema 1 -->
+      <section style="background-color: white; border: 1px solid #ccc; padding: 15px; border-radius: 10px; width: 45%;">
+        <h2>Tema 1: La importancia de estudiar</h2>
+        <p><strong>Fecha:</strong> 29 de abril de 2025</p>
+        <img src="estudiando.jpg" alt="Estudiante estudiando" style="width: 100%; border-radius: 8px;"><br><br>
+        <p>Estudiar es fundamental para el desarrollo personal y profesional. Nos ayuda a adquirir conocimientos y habilidades que utilizaremos toda la vida.</p>
+      </section>
+
+      <!-- Tema 2 -->
+      <section style="background-color: white; border: 1px solid #ccc; padding: 15px; border-radius: 10px; width: 45%;">
+        <h2>Tema 2: Mi asignatura favorita</h2>
+        <p><strong>Fecha:</strong> 28 de abril de 2025</p>
+        <img src="diseno.jpg" alt="Diseño UX UI" style="width: 100%; border-radius: 8px;"><br><br>
+        <p>Mi asignatura favorita es Diseño UX/UI porque nos expande mentalmente a pensar gráficamente como un diseñador.</p>
+      </section>
+
+    </div>
+
+    <!-- Formulario para nuevo tema -->
+    <section style="background-color: #dcfffb; border: 2px dashed #66cdaa; padding: 15px; margin: 30px 0; border-radius: 10px;">
+      <h2>Escribir un nuevo tema</h2>
+      <form>
+        <label for="titulo">Título del tema:</label><br>
+        <input type="text" id="titulo" name="titulo" style="width: 100%; padding: 5px;"><br><br>
+
+        <label for="fecha">Fecha:</label><br>
+        <input type="date" id="fecha" name="fecha" style="padding: 5px;"><br><br>
+
+        <label for="contenido">Contenido:</label><br>
+        <textarea id="contenido" name="contenido" rows="5" style="width: 100%; padding: 5px;"></textarea><br><br>
+
+        <label for="imagen">Subir una imagen:</label><br>
+        <input type="file" id="imagen" name="imagen"><br><br>
+
+        <input type="submit" value="Publicar Tema" style="padding: 10px 20px;">
+      </form>
+    </section>
+
+    <!-- Sección de Novedades -->
+    <section style="background-color: #fff8dc; border: 2px solid #daa520; padding: 15px; border-radius: 10px;">
+      <h2>📰 Novedades</h2>
+      <ul>
+        <li>Se realizará una feria de arduinos el próximo 10 de mayo.</li>
+        <li>Nuevo laboratorio de informática disponible desde la próxima semana.</li>
+        <li>Inscripciones abiertas para el concurso de programacion de videojuegos.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer style="text-align: center; margin-top: 40px; padding: 10px;">
+    <p>&copy; 2025 Johao - Blog Escolar</p>
+  </footer>
+
+</body>
+</html>
